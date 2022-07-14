@@ -62,9 +62,13 @@ function countEvenNumbers(arrayOfNumbers) {
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
+  // convert number to farenheight to f = (y * 1.8) + 32
+  // return array of converted numbers ->map
+  // remove decimal values -> math.trunc
+  return arrayOfNumbers.map((celS) => Math.trunc((celS * 9/5) + 32));
     return arrayOfNumbers;
 }
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 
 // ========================
